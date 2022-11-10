@@ -1,4 +1,4 @@
-// PCOO_Proyecto
+# PCOO_Proyecto
 
 Este proyecto estara basado en Card Wars-Hora de Aventura.
 
