@@ -10,13 +10,24 @@ using namespace std;
 #include "Hechisos.h"
 
 int main() {
-    Criaturas criatura1 = Criaturas("Yermo", "Dave el muerto", 25);
+    Criaturas criatura1;
+    criatura1.setTipo("Yermo");
+    criatura1.setNombre("Dave el muerto");
+    criatura1.setVida(25);
+    
     criatura1.invocar();
 
-    Estructuras estructura1 = Estructuras("Tierras boscosas", "Fuerte siempre verde", 100);
-    estructura1.invocar();
+    Estructuras estructura1;
+    estructura1.setTipo("Tierras boscosas");
+    estructura1.setNombre("Fuerte siempre verde");
+    estructura1.setVida(100);
 
-    Hechisos hechiso1 = Hechisos("Tierras boscosas", "Sombra de intencion");
+    estructura1.invocar();
+    
+    Hechisos hechiso1;
+    hechiso1.setTipo("Tierras boscosas");
+    hechiso1.setNombre("Sombra de intencion");
+
     hechiso1.invocar();
 
     return 0;
