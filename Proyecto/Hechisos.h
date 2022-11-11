@@ -10,17 +10,26 @@ class Hechisos
 
     //Metodos
     public:
-    Hechisos(string, string);
-    void invocar();
-    
+    Hechisos(string _tipo, string _nombre){
+        tipo = _tipo;
+        nombre = _nombre;
+    }
+        //Getters
+        string getTipo() {
+            return tipo;
+        }
+        string getNombre() {
+            return nombre;
+        }
+        //setters
+        void setTipo(string _tipo) {
+            tipo = _tipo;
+        }
+        void setNombre(string _nombre) {
+            nombre = _nombre;
+        }
+        //Metodos de la clase
+        void invocar(){
+            cout<<"Hechizo creado en "<<tipo<<endl<<"Nombre: "<<nombre<<endl;
+        }
 };
-
-Hechisos::Hechisos(string _tipo, string _nombre){
-    tipo = _tipo;
-    nombre = _nombre;
-}
-
-
-void Hechisos::invocar(){
-    cout<<"Hechizo creado en "<<tipo<<endl<<"Nombre: "<<nombre<<endl;
-}
