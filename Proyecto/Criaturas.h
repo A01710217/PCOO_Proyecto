@@ -11,18 +11,33 @@ class Criaturas
 
     //Metodos
     public:
-    Criaturas(string, string, int);
-    void invocar();
-    
+        Criaturas(string _tipo, string _nombre, int _vida){
+            tipo = _tipo;
+            nombre = _nombre;
+            vida = _vida;
+        }
+        //Getters
+        string getTipo() {
+            return tipo;
+        }
+        string getNombre() {
+            return nombre;
+        }
+        int getVida() {
+            return vida;
+        }
+        //setters
+        void setTipo(string _tipo) {
+            tipo = _tipo;
+        }
+        void setNombre(string _nombre) {
+            nombre = _nombre;
+        }
+        void setVida(int _vida) {
+            vida = _vida;
+        }
+        //Metodos de la clase
+        void invocar(){
+            cout<<"Soy del "<<tipo<<endl<<"Mi nombre es "<<nombre<<endl<<"Vida: "<<vida<<endl;
+        }
 };
-
-Criaturas::Criaturas(string _tipo, string _nombre, int _vida){
-    tipo = _tipo;
-    nombre = _nombre;
-    vida = _vida;
-}
-
-
-void Criaturas::invocar(){
-    cout<<"Soy del "<<tipo<<endl<<"Mi nombre es "<<nombre<<endl<<"Vida: "<<vida<<endl;
-}
