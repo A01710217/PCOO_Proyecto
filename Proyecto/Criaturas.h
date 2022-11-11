@@ -11,11 +11,6 @@ class Criaturas
 
     //Metodos
     public:
-        Criaturas(string _tipo, string _nombre, int _vida){
-            tipo = _tipo;
-            nombre = _nombre;
-            vida = _vida;
-        }
         //Getters
         string getTipo() {
             return tipo;
