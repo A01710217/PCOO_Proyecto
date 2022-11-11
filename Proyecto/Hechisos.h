@@ -10,10 +10,6 @@ class Hechisos
 
     //Metodos
     public:
-    Hechisos(string _tipo, string _nombre){
-        tipo = _tipo;
-        nombre = _nombre;
-    }
         //Getters
         string getTipo() {
             return tipo;
