@@ -5,30 +5,23 @@ Juego de Cartas.
 #include <iostream>
 using namespace std;
 
-#include "Criaturas.h"
-#include "Estructuras.h"
+#include "CriaturaY.h"
+#include "CriaturaTB.h"
+#include "Partida.h"
 #include "Hechisos.h"
 
 int main() {
-    Criaturas criatura1;
-    criatura1.setTipo("Yermo");
-    criatura1.setNombre("Dave el muerto");
-    criatura1.setVida(25);
+
+    // Crear criaturas
+    CriaturaY criaturaY1("Yermo", "Dave el muerto", "Murió por un disparo con una vala de Hg, no murio al instante" ,25, 10, 20);
+    CriaturaTB criaturaTB1("Tierras Boscosas", "Cangrejo Herradura", "Un hermitaño de cuna, su sangre es letal" ,25, 10, 20);
     
-    criatura1.invocar();
+    // Agregar criatura
+    Partida p1;
+    p1.agregarCriaturas(&criaturaY1);
+    p1.agregarCriaturas(&criaturaTB1);
 
-    Estructuras estructura1;
-    estructura1.setTipo("Tierras boscosas");
-    estructura1.setNombre("Fuerte siempre verde");
-    estructura1.setVida(100);
-
-    estructura1.invocar();
-    
-    Hechisos hechiso1;
-    hechiso1.setTipo("Tierras boscosas");
-    hechiso1.setNombre("Sombra de intencion");
-
-    hechiso1.invocar();
+    p1.invocar();
 
     return 0;
 }
