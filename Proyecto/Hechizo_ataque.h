@@ -29,9 +29,6 @@ class Hechizo_ataque : public Hechizo {
         }
         
         //Metodos de la clase
-        void dannar(){
-            cout<<"Daño"<<endl;
-        }
         void invocarH(){
             cout<<"He sido invocado"<<endl;
             cout<<"Hechizo creado en "<<tipo<<endl<<"Nombre: "<<nombre<<endl<<"Hitoria: "<<historia<<endl<<"Daño: "<<daño<<endl;           
