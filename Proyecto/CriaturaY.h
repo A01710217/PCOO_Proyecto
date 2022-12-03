@@ -4,38 +4,25 @@
 #include <iostream>
 using namespace std;
 
-#include "Criaturas.h"
+#include "Criatura.h"
 
-class CriaturaY : public Criaturas {
+class CriaturaY : public Criatura {
     //Atributos
-    private:
-    int daño;
-
     public:
         //Constructores
         CriaturaY(string _tipo, string _nombre, string _historia, int _vida, int _ataque, int _danno) :
-        Criaturas(_tipo, _nombre, _historia, _vida, _ataque){
-            daño = _danno;
-        }
-
-        //Getters
-        int getDanno() {
-            return daño;
-        }
-
-        //setters
-        void setDanno(int _danno){
-            daño = _danno;
+        Criatura(_tipo, _nombre, _historia, _vida, _ataque, _danno){
+            
         }
 
         //Metodos de la clase
         int calcularVida(){
             return (vida - daño);
         }
-        void ataque(){
+        void atacar(){
             cout<<"Estoy atacando"<<endl;
         }
-        void invocar(){
+        void invocarC(){
             cout<<"He sido invocado"<<endl;
             cout<<"Soy del "<<tipo<<endl<<"Mi nombre es "<<nombre<<endl<<"Historia: "<<historia<<endl<<"Vida: "<<vida<<endl;
         }
