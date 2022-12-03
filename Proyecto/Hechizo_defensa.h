@@ -29,9 +29,6 @@ class Hechizo_defensa : public Hechizo {
         }
         
         //Metodos de la clase
-        void defender(){
-            cout<<"Añadiendo defensa"<<endl;
-        }
         void invocarH(){
             cout<<"He sido invocado"<<endl;
             cout<<"Hechizo creado en "<<tipo<<endl<<"Nombre: "<<nombre<<endl<<"Hitoria: "<<historia<<endl<<"Defensa: "<<defensa<<endl;
