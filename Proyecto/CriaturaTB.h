@@ -16,12 +16,6 @@ class CriaturaTB : public Criatura {
         }
 
         //Metodos de la clase
-        int calcularVida(){
-            return (vida - daño);
-        }
-        void atacar(){
-            cout<<"Estoy atacando"<<endl;
-        }
         void invocarC(){
             cout<<"He sido invocado"<<endl;
             cout<<"Vengo de las "<<tipo<<endl<<"Mi nombre es "<<nombre<<endl<<"Historia: "<<historia<<endl<<"Vida: "<<vida<<endl;
