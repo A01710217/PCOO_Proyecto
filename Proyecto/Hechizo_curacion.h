@@ -29,9 +29,6 @@ class Hechizo_curacion : public Hechizo {
         }
         
         //Metodos de la clase
-        void curar(){
-            cout<<"Curando"<<endl;
-        }
         void invocarH(){
             cout<<"He sido invocado"<<endl;
             cout<<"Hechizo creado en "<<tipo<<endl<<"Nombre: "<<nombre<<endl<<"Hitoria: "<<historia<<endl<<"Curar: "<<cura<<endl;
