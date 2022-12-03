@@ -1,12 +1,11 @@
-#ifndef CRIATURAS_H
-#define CRIATURAS_H
+#ifndef CRIATURA_H
+#define CRIATURA_H
 
 #include <iostream>
 #include <string>
 using namespace std;
 
-class Criaturas
-{   
+class Criatura {   
     //Atributos
     protected:
         string tipo;
@@ -14,15 +13,17 @@ class Criaturas
         string historia;
         int vida;
         int ataque;
+        int daño;
 
     public:
         //Constructores
-        Criaturas(string _tipo, string _nombre, string _historia, int _vida, int _ataque) {
+        Criatura(string _tipo, string _nombre, string _historia, int _vida, int _ataque, int _danno) {
             tipo = _tipo;
             nombre = _nombre;
             historia = _historia;
             vida = _vida;
             ataque = _ataque;
+            daño = _danno;
         }
 
         //Getters
@@ -41,6 +42,9 @@ class Criaturas
         int getAtaque() {
             return ataque;
         }
+        int getDanno() {
+            return daño;
+        }
 
         //setters
         void setTipo(string _tipo) {
@@ -58,11 +62,14 @@ class Criaturas
         void setAtaque(int _ataque){
             ataque = _ataque;
         }
+        void setDanno(int _danno){
+            daño = _danno;
+        }
 
         //Metodos de la clase
         virtual int calcularVida() = 0;
-        virtual void invocar(){
-            cout<<"Soy del "<<tipo<<endl<<"Mi nombre es "<<nombre<<endl<<"Vida: "<<vida<<endl<<"Ataque: "<<ataque<<endl;
+        virtual void invocarC(){
+            cout<<"Soy "<<tipo<<endl<<"Mi nombre es "<<nombre<<endl<<"Vida: "<<vida<<endl<<"Ataque: "<<ataque<<endl;
         }
 };
 
