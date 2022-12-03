@@ -67,7 +67,6 @@ class Criatura {
         }
 
         //Metodos de la clase
-        virtual int calcularVida() = 0;
         virtual void invocarC(){
             cout<<"Soy "<<tipo<<endl<<"Mi nombre es "<<nombre<<endl<<"Vida: "<<vida<<endl<<"Ataque: "<<ataque<<endl;
         }
